@@ -5,11 +5,13 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdApps } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { BsBell } from "react-icons/bs";
+import { Categories } from './Categories';
 
 
 
 export const Header = () => {
     return (
+        <>
         <header className="header">
             <div className="logo">
                 <img src={logo} alt="youtube-logo" />
@@ -28,5 +30,7 @@ export const Header = () => {
                 <div className="user-img"></div>
             </div>
         </header>
+        <Categories />
+        </>
     )
 }

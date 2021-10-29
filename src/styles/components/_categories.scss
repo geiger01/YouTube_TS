@@ -1,0 +1,13 @@
+.categories{
+    @include flex-center;
+    justify-content: space-between;
+    background-color: #212121fb;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    left: 0;
+    
+    height: 56px;
+    padding: 0 1rem 0 4.5rem;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.171);
+}

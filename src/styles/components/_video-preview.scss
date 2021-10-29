@@ -1,0 +1,45 @@
+.video-preview{
+    background-color: #fff;
+    width: 18rem;
+    height:10rem;
+    justify-self: center;
+
+
+  
+    @include for-phone{
+        width: 22.5rem;
+        height:12.5rem;
+    
+    }
+    @include for-large-phone{
+        width: 21.5rem;
+        height:12rem;
+
+    }
+    @include for-small-tablet{
+        width:16rem;
+        height:9.6rem;
+
+    }
+
+    @include for-tablet{
+        width:19rem;
+        height:9.6rem;
+
+    }
+    @include for-large-tablet{
+        width: 21.5rem;
+        height:12rem;
+
+    }
+    @include for-desktop{
+        width: 20rem;
+        height:11.5rem;
+
+    }
+    @include for-large-desktop{
+        width: 21.5rem;
+        height:12rem;
+
+    }
+}

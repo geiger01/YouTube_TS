@@ -1,0 +1,35 @@
+.video-list{
+    padding: 8.5rem 0.5rem 2.5rem 5rem;
+
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+
+    grid-template-columns: repeat(1 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+    @include for-large-phone{
+        padding: 8.5rem 4.6rem 2.5rem 6rem;
+        justify-content: unset;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+    @include for-small-tablet{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+    }
+   
+    @include for-desktop{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+
+    @include for-large-desktop{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    }
+}
