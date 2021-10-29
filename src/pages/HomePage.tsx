@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { SideNav } from '../components/SideNav'
 export const HomePage = () => {
     return (
         <div className="home-page">
-            Home Page
+            <SideNav />
         </div>
     )
 }

@@ -6,10 +6,12 @@
     justify-content: center;
 }
 
-@mixin opacity-animation {
-    animation: opacity 1.5s;
+@mixin flex-column() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
 
 // Media Queries
 
