@@ -1,0 +1,55 @@
+.header{
+    @include flex-center;
+    justify-content: space-between;
+    background-color: #212121bc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    height: 56px;
+    padding: 0 1rem 0 4.5rem;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.171);
+
+    .logo{
+        width: 90px;
+        padding-top: 5px;
+        fill: white;
+    }
+
+    .youtube-search{
+
+        @include flex-center;
+        input{
+            font-family: Roboto light, sans-serif;
+            color: rgb(216, 216, 216);
+            font-size: 1.03rem;
+            outline: none;
+            border: 0.5px solid rgba(128, 128, 128, 0.281);
+            border-right: 0;
+            padding:2px 6px;
+            height: 2.5rem;
+            width: 35rem;
+            background-color: #121212;
+
+            &:focus{
+                border: 0.5px solid rgba(3, 113, 216, 0.658);
+            }
+
+        }
+
+        button{
+            @include flex-center;
+            font-size: 1.5rem;
+            background-color: #323232;
+            color: rgba(255, 255, 255, 0.781);
+            width: 4rem;
+            height: 2.5rem;
+            border: 0.5px solid rgba(0, 0, 0, 0.561);
+
+            &:hover{
+                border: none;
+            }
+        }
+    }
+}
