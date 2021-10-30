@@ -1,4 +1,5 @@
 .video-preview{
+    position: relative;
     background-color: rgb(93, 93, 93);
     width: 18rem;
     height:10rem;
@@ -8,8 +9,9 @@
     background-size: cover ;
     background-position: center;
 
+    margin-bottom: 7.5rem;
+    cursor: pointer;
 
-  
     @include for-phone{
         width: 22.5rem;
         height:12.5rem;
@@ -46,4 +48,23 @@
         height:12rem;
 
     }
+
+    .video-details{
+        position: absolute;
+        @include flex-column;
+        align-items: unset;
+        top: calc(100% + 15px);
+        font-family: Roboto regular, sans-serif;
+
+        & h3{
+            margin-bottom: 7px; 
+            font-size: 1.05rem;
+            color: white; 
+        }
+
+        & p{
+            font-size: 0.95rem;
+            color: #AAAA;
+        }
+   }
 }

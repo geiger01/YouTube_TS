@@ -9,7 +9,8 @@
     
     height: 56px;
     padding: 0 1rem 0 4.5rem;
-    border-bottom: 0.5px solid rgba(128, 128, 128, 0.171);
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.253);
+    z-index: 100;
 
     .logo{
         cursor: pointer;
@@ -22,6 +23,7 @@
 
         @include flex-center;
         input{
+            width: 15rem;
             font-family: Roboto light, sans-serif;
             color: rgb(216, 216, 216);
             font-size: 1.03rem;
@@ -30,12 +32,21 @@
             border-right: 0;
             padding:2px 12px;
             height: 2.5rem;
-            width: 35.5rem;
             background-color: #121212;
             border-radius: 2px;
-
+            
             &:focus{
                 border: 0.5px solid rgba(3, 113, 216, 0.658);
+            }
+            
+            @include for-phone{
+                width: 20rem;
+            }
+            @include for-large-phone{
+                width: 23rem;
+            }
+            @include for-tablet{
+                width: 35.5rem;
             }
 
         }

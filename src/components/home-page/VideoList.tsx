@@ -8,7 +8,6 @@ interface IVideoListProps{
 
 export const VideoList = ({videos}: IVideoListProps) => {
 
-    console.log(videos);
     
     return (
         <div className="video-list">

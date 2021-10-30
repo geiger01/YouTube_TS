@@ -4,7 +4,7 @@ import { storageService } from "./storage.service"
 const API_KEY = process.env.REACT_APP_API_KEY
 const CACHED_STORAGE_KEY = 'cached'
 
-const END_POINT  = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&order=viewCount&key=${API_KEY}`
+const END_POINT  = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&order=viewCount&key=${API_KEY}`
 export const youtubeService={
     getYoutubeVideos
 }
@@ -20,7 +20,7 @@ export interface IVideo {
 
 }
 
-async function getYoutubeVideos(topic: string='react.js'): Promise<IVideo[] | []>{
+async function getYoutubeVideos(topic: string): Promise<IVideo[] | []>{
 
     const cached = storageService.loadFromStorage(CACHED_STORAGE_KEY) || {}
 
