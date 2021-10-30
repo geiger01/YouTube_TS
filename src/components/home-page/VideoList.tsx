@@ -1,15 +1,18 @@
 import React from 'react'
+import { IVideo } from '../../services/youtube.service'
 import { VideoPreview } from './VideoPreview'
 
-export const VideoList = () => {
+interface IVideoListProps{
+    videos: IVideo[];
+}
+
+export const VideoList = ({videos}: IVideoListProps) => {
+
+    console.log(videos);
+    
     return (
         <div className="video-list">
-            <VideoPreview />
-            <VideoPreview />
-            <VideoPreview />
-            <VideoPreview />
-            <VideoPreview />
-            <VideoPreview />
+            {videos.map((video)=>   <VideoPreview key={video.videoId} video={video} />)}
         </div>
     )
 }
