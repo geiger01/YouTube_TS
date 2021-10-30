@@ -31,7 +31,6 @@ export const Header = ({searchVids,getVideos}: IPropsHeader) => {
                         <input value={topic} onChange={handleChange} type="text" placeholder="Search" />
                         <button className="search-icon">
                             <IoSearchOutline />
-
                         </button>
                     </div>
                 </form>
