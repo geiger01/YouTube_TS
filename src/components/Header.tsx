@@ -5,7 +5,9 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoMdApps } from "react-icons/io";
 import { RiVideoAddLine } from "react-icons/ri";
 import { BsBell } from "react-icons/bs";
-import { Categories } from './Categories';
+
+import hamburger from '../assets/img/hamburger.svg'
+import { useHistory } from 'react-router-dom';
 
 interface IPropsHeader{
     searchVids: (event: React.FormEvent<HTMLFormElement> ,topic: string)=>void;
@@ -15,16 +17,23 @@ interface IPropsHeader{
 export const Header = ({searchVids,getVideos}: IPropsHeader) => {
 
     const [topic, setTopic] = useState('')
+    const histoy = useHistory()
 
     const handleChange=(e: React.ChangeEvent<HTMLInputElement>): void=>{
         setTopic(e.target.value)
     }
-
+    const backToHome = () =>{
+        histoy.push('/')
+    }
+    
     return (
         <>
         <header className="header">
             <div className="logo">
-                <img src={logo} alt="youtube-logo" />
+            <button className="side-nav-hamburger">
+                <img src={hamburger} alt="side-nav-hamburger menu" />
+            </button>
+                <img onClick={backToHome} src={logo} alt="youtube-logo" />
             </div>
                 <form onSubmit={(event)=>{searchVids(event,topic); setTopic('') }}>
                     <div className="youtube-search">
@@ -41,7 +50,6 @@ export const Header = ({searchVids,getVideos}: IPropsHeader) => {
                 <div className="user-img"></div>
             </div>
         </header>
-        <Categories getVideos={getVideos}/>
         </>
     )
 }
