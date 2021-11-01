@@ -1,0 +1,9 @@
+.video-page{
+    @include flex-center;
+    
+    & iframe{
+        margin-top: 5rem;
+        width:1300px;
+        height:700px;
+    }
+}
