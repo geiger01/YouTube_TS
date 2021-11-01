@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/YouYube_TS/static/css/main.0f92c84f.chunk.css",
+    "main.js": "/YouYube_TS/static/js/main.575325f8.chunk.js",
+    "main.js.map": "/YouYube_TS/static/js/main.575325f8.chunk.js.map",
+    "runtime-main.js": "/YouYube_TS/static/js/runtime-main.b8f09399.js",
+    "runtime-main.js.map": "/YouYube_TS/static/js/runtime-main.b8f09399.js.map",
+    "static/js/2.33fd07e9.chunk.js": "/YouYube_TS/static/js/2.33fd07e9.chunk.js",
+    "static/js/2.33fd07e9.chunk.js.map": "/YouYube_TS/static/js/2.33fd07e9.chunk.js.map",
+    "index.html": "/YouYube_TS/index.html",
+    "static/css/main.0f92c84f.chunk.css.map": "/YouYube_TS/static/css/main.0f92c84f.chunk.css.map",
+    "static/js/2.33fd07e9.chunk.js.LICENSE.txt": "/YouYube_TS/static/js/2.33fd07e9.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/YouYube_TS/static/media/Roboto-Regular.a8d6ac03.ttf",
+    "static/media/hamburger.b9fd4a8b.svg": "/YouYube_TS/static/media/hamburger.b9fd4a8b.svg",
+    "static/media/logo.2fb8e699.svg": "/YouYube_TS/static/media/logo.2fb8e699.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8f09399.js",
+    "static/js/2.33fd07e9.chunk.js",
+    "static/css/main.0f92c84f.chunk.css",
+    "static/js/main.575325f8.chunk.js"
+  ]
+}
