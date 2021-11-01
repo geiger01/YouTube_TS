@@ -3,7 +3,22 @@
     
     & iframe{
         margin-top: 5rem;
-        width:1300px;
-        height:700px;
+        width:460px;
+        height:250px;
+
+        @include for-large-phone{
+            width:760px;
+            height:450px;
+        }
+        
+        @include for-tablet{
+            width:960px;
+            height:550px;
+        }
+   
+        @include for-desktop{
+            width:1300px;
+            height:700px;
+        }
     }
 }
