@@ -10,8 +10,6 @@ export const App=()=>{
 
   const [videos, setVideos] = useState<IVideo[]>([])
 
-  
-
   useEffect(() => {
       
       getVideos()
